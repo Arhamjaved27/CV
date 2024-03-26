@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arham CV</title>
+    <style>
+        :root{
+            --maincolor :rgb(147, 200, 218);
+            --maindark :rgb(77, 117, 131);
+            --secondcolor :rgb(229, 229, 229);
+            --heading : rgb(26, 47, 70) ;
+        }
+        *{
+            margin: 0;
+            /* padding: 0; */
+            box-sizing: border-box;
+        }
+        hr{
+            margin: 5px 0;
+            height: 2px;
+            outline: none;
+            border: none;
+            background-color: var(--heading);
+        }
+        h2{
+            padding-top: 10px;
+        }
+        .top-p1{
+            padding-top: 10px;
+        }
+        .top-p2{
+            padding-top: 20px;
+        }
+        .top-p5{
+            padding-top: 50px;
+        }
+        
+        .left-p5{
+            padding-left: 50px;
+        }
+        .line-h2{
+            line-height: 25px;
+        }
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200vh;
+            width: 100%;
+            background-color: var(--maindark);
+
+        }
+        #contaner{
+            position: relative;
+            height: 100%;
+            width: 60%;
+        }
+        #pofile{
+            display: flex;
+            align-items: end;
+            position: absolute;
+            top: 120px;
+            left: 65px;
+            height: 250px;
+            width: 250px;
+            z-index: 99;
+            background-color: var(--maindark);
+            border: 2px solid var(--secondcolor);
+        }
+        #pic-box{
+            position: relative;
+            left: -3px;
+            bottom: -3px;
+            height: 90%;
+            width: 90%;
+            background: url("./profile.JPG");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid var(--heading);
+            box-shadow: -6px 6px 10px var(--maindark);
+
+        }
+
+        #contaner #uper{
+            display: flex;
+            height: 30%;
+            width: 100%;
+            
+        }
+
+        #uper #up-left{
+            position: relative;
+            height: 100%;
+            width: 40%;
+            padding: 70px 0  0 100px;
+            background-color: var(--maincolor);
+           
+        }
+        #uper #up-left::before{ 
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-top: 422px solid transparent;
+            border-left: 356px solid var(--secondcolor);
+            border-bottom: 0px solid transparent;
+        }
+        
+       #name{
+        color: var(--heading);
+        font-size: 37px;
+       }
+       
+        #uper #up-right{
+            height: 100%;
+            width:65% ;
+            padding: 70px 45px  0 0;
+            background-color: var(--maincolor);
+            border-bottom: 2px solid var(--secondcolor);
+        }
+        #skil-h{
+            margin-top: 30px;
+        }
+        #skill-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+            line-height: 25px;
+        }
+        #lower{
+            display: flex;
+            height:60%;
+            width: 100%;
+        }
+        #low-left{
+            height: 100%;
+            width: 39%;
+            padding: 70px 20px  0 0;
+            background-color: var(--secondcolor);
+        }
+        #soc-list{
+            list-style:circle;
+        }
+        #downshap{
+            margin-top: 100px;
+            height: 80px;
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: var(--heading);
+        }
+        
+
+        #low-right{
+            height: 100%;
+            width: 61%;
+            padding: 10px 30px 0 30px ;
+            background-color: var(--maincolor);
+        }
+        #exp{
+            line-height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="contaner">
+            <div id="pofile">
+                <div id="pic-box"></div>
+            </div>
+            <div id="uper">
+                <div id="up-left">
+                    <h1 id="name">Arham Javed</h1>
+                </div>
+                <div id="up-right">
+                    <h2>Summary</h2> <hr>
+                    <p>I’m a committed with a focus on computer vision and AI. I am also 
+                        actively engaged in digital marketing, leveraging my knowledge to 
+                        create effective approach that enhances the online presence of 
+                        projects I undertake. And I am also a Web Developer specializing 
+                        in front end development. Knowledge about all aspects of the 
+                        development process for exciting websites. Well skilled in a variety 
+                        of programming languages, such as HTML5, CSS, JS , C# and 
+                        Python.</p>
+                    <h2 id="skil-h">Skill Highlights</h2> <hr>
+                    <div id="skill-list">
+                        <ul>
+                            <li>Project Management</li>
+                            <li>Photo Retouching</li>
+                            <li>Computer Vision</li>
+                        </ul>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>AI Model Traning</li>
+                            <li>Social Marketing</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="lower">
+                <div id="low-left">
+                    <!-- /////////////Contact////////////////// -->
+                    <div class="line-h2 left-p5">
+                        <h2>Contact</h2> <hr>
+                        <p><strong>Address:</strong> Street # 3 Moh Rasool 
+                            Pura, Sambrial <br> <strong>Phone:</strong> +92 3179382585 <br>
+                            <strong>Address:</strong>arhamjaved867@gmail.com</p>
+                        
+                    </div>
+                   
+                    <!-- /////////////Language////////////////// -->
+                   <div class="line-h2 top-p5 left-p5">
+                        <h2>Language</h2><hr>
+                        <ul>
+                            <li>English</li>
+                            <li>Urdu</li>
+                        </ul>
+                   </div>
+
+                    <!-- /////////////Social////////////////// -->
+                    <div class="line-h2 top-p5 left-p5">
+                        <h2>Social Medias</h2><hr>
+                        <ul id="soc-list">
+                            <li><a href="#">Linked In</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <!-- /////////////Shap////////////////// -->
+                    <div id="downshap"></div>
+                </div>
+                <div id="low-right">
+                    <div id="exp">
+                        <h2>Experience</h2> <hr>
+                        <!-- /////////////exoerience 1////////////////// -->
+                        <h4>AI By Tech (Company): Karachi, Pakistan</h4>
+                            <p><Strong> AI practitioner - </Strong>09/2023 to Present </p>
+                        <ul>
+                            <li>Supervised the creation and application of machine learning 
+                                models, which improved predictive analytics and made 
+                                decision-making procedures more efficient.</li>
+                            <li>Advised clients on the strategic integration of AI 
+                                technologies.</li>
+                            <li>Implemented computer vision applications for client 
+                                projects.</li>
+                        </ul>
+
+                        <!-- /////////////exoerience 2////////////////// -->
+                        <h4 class="top-p2">Freelancing: Sambrial, Pakistan</h4>
+                            <p><strong>Web Developer - </strong>09/2017 to 05/2020 </p>
+                        <ul>
+                            <li>Cooperate with designers to create clean interfaces and 
+                                simple, intuitive interactions and experiences.</li>
+                            <li>Develop project concepts and maintain optimal workflow.</li>
+                            <li>Work with senior developer to manage large, complex 
+                                design projects for corporate clients. </li>
+                        </ul>
+                    </div>
+
+                    <!-- /////////////Education////////////////// -->
+                    <div id="education">
+                        <h2>Education</h2> <hr>
+                    <ul>
+                        <li><strong> Bachelor:</strong> Computer Science (2020 – Present) 
+                            <br>University Of Sialkot
+                        </li>
+                        <li class="top-p1"><strong> Intermediate: </strong> computer science (2018 - 2020)
+                            <br>Govt Degree Collage Sambrial
+                        </li>
+                        <li class="top-p1"><strong> Matric:</strong>  Computer Science (2016 - 2018) 
+                            <br>Govt Awami High Sambrial
+                        </li>
+                    </ul>
+                    </div>
+                    
+                    <!-- /////////////Education////////////////// -->
+                    <div id="certificate">
+                        <h2>Certifications</h2><hr>
+                    <p class="line-h2">Artificial Intelligence <strong>(DLSEI Coursera)</strong><br>
+                        Office Management <Strong>(Professional Academy Sambrial)</Strong><br>
+                        Web Design <Strong>(DG Skills)</Strong><br>
+                        Search Engine Optimization <Strong>(DG Skills)</Strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </main>
+</body>
+</html>
